@@ -17,9 +17,13 @@ public class Main {
                 var fileWriter = new FileWriter(fileName);
                 var writer = new BufferedWriter(fileWriter);
         ) {
+            int i = 0;
+            while (i < players2.size() ) {
+                writer.write(players2.get(i).toString());
+                writer.newLine();
+                i++;
+            }
 
-           //writer.write(String.valueOf(players2));
-            writer.write(players2.toString());
 
         } catch (IOException e) {
             System.err.println("Nie udało się zapisać pliku");
