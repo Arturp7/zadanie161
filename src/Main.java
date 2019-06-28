@@ -9,9 +9,9 @@ public class Main {
     public static void main(String[] args) {
         ArrayUtils arrayUtils = new ArrayUtils();
         ArrayList<Player> players2 = arrayUtils.players();
-        System.out.println(players2);
+       // System.out.println(players2);
         Collections.sort(players2);
-        System.out.println(players2);
+       // System.out.println(players2);
         String fileName = "stats.csv";
         try (
                 var fileWriter = new FileWriter(fileName);
@@ -23,7 +23,7 @@ public class Main {
                 writer.newLine();
                 i++;
             }
-
+            System.out.println("Dane posortowano i zapisano do pliku stats.csv");
 
         } catch (IOException e) {
             System.err.println("Nie udało się zapisać pliku");

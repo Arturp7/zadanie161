@@ -15,11 +15,9 @@ public class ArrayUtils {
                 String[] split = nextLine.split(" ");
                 players.add(new Player(split[0], split[1], Integer.valueOf(split[2])));
                 // System.out.println();
-            } else {
-                System.out.println("Dane posortowano i zapisano do pliku stats.csv");
             }
         } while (!(nextLine.equals("stop")));
-
+        
         return players;
     }
 }
